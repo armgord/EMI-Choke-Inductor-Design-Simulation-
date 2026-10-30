@@ -1,0 +1,4 @@
+# COMSOL temporary and recovery files
+*.mph.lock
+*.recovery
+*.status
