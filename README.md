@@ -9,6 +9,7 @@ Developed for *TE2005B – Application of Electromagnetic Theory* at Tecnológic
 </p>
 
 > 📄 **Full report (Spanish):** [`docs/Reporte_Diseno_Inductor.pdf`](docs/Reporte_Diseno_Inductor.pdf)
+> 🧲 **COMSOL model:** [download from v1.0 release](https://github.com/armgord/EMI-Choke-Inductor-Design-Simulation-/releases/tag/v1.0)
 
 ---
 
@@ -91,20 +92,20 @@ Core conductivity should stay low; a conductive core induces eddy currents that 
 ## Repository Contents
 
 ```
-model/
-  toroidal_inductor.mph   COMSOL model (solutions and meshes cleared; re-run studies to regenerate)
 docs/
   Reporte_Diseno_Inductor.pdf   Full technical report (Spanish)
-images/                   Figures used in this README
+images/                         Figures used in this README
 ```
+
+The COMSOL model (`.mph`, ~2 GB with solutions) is attached to the [**v1.0 release**](https://github.com/armgord/EMI-Choke-Inductor-Design-Simulation-/releases/tag/v1.0).
 
 ### Opening the model
 
-1. Open `model/toroidal_inductor.mph` in COMSOL Multiphysics with the **AC/DC Module**.
-2. Adjust parameters under *Global Definitions → Parameters* (`N`, `r_wire`, core μr).
-3. Build the mesh and run the desired study. Solving regenerates all result plots.
+1. Download the `.mph` file from the [v1.0 release](https://github.com/armgord/EMI-Choke-Inductor-Design-Simulation-/releases/tag/v1.0).
+2. Open it in COMSOL Multiphysics with the **AC/DC Module**.
+3. Adjust parameters under *Global Definitions → Parameters* (`N`, `r_wire`, core μr) and re-run the desired study.
 
-> The model is stored without computed solutions to keep it small. The fully solved file (~2 GB) is available [here](LINK_TO_SOLVED_MODEL).
+The file includes all computed solutions, so results can be viewed without re-solving.
 
 ---
 
